@@ -145,3 +145,5 @@ print(12 == 12) #this is obvious true
 #but if i use not 
 
 print(not 12 == 12)    # then it will be false. Not reverse the value from true to false and false to true
+
+
