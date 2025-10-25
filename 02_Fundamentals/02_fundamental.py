@@ -1,3 +1,5 @@
+"""If Else questions"""
+
 """
 money = int(input("Please provide the money :-"))
 
@@ -70,10 +72,73 @@ else:
 
 """chek Leap year"""
 
+"""
 year = int(input("Enter the year!"))
 
 if year % 4 == 0:
     print(f"{year} is leap year")
 
 else:
-    print(f"{year} is not a leap year")
+    print(f"{year} is not a leap year")"""
+
+
+"""For Loops questioins"""
+
+""" Lets Print a Table of 5 """
+
+"""
+print("Table of 5")
+for i in range(1,11):
+    print(f"5x{i} = {5*i}")
+ """
+
+"""For Loops with strings"""
+
+"""
+a = "I will be good developer"
+
+for i in a:
+    print(i) """
+
+"""Print hello world n times"""
+
+"""
+n = int(input("Enter the value of n:-"))
+
+for i in range(n):
+    print("Hello World")"""
+
+
+"""Print natural numbers"""
+
+"""
+n = int(input("Enter the value of n:-"))
+
+for i in range(1,n+1):
+    print(i)"""
+
+"""Reverse Number"""
+
+# n = int(input("Enter the value of n:-"))
+
+# for i in range(n,0,-1):
+#     print(i)
+
+"""sum upto n numbers"""
+
+# n = int(input("Enter the value of n:-"))
+
+# sum = 0
+# for i in range(1,n+1):
+#     sum+=i
+# print(f"The value of sum: {sum}")
+
+"""Factorial"""
+
+# n = int(input("Enter the value of n:-"))
+
+# fact = 1
+# for i in range(1,n+1):
+#     fact*=i
+# print(f"The factorial value of {n} is : {fact}")
+
