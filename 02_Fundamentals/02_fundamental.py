@@ -142,3 +142,60 @@ for i in range(1,n+1):
 #     fact*=i
 # print(f"The factorial value of {n} is : {fact}")
 
+"""Sum of even and odd numbers"""
+"""
+even = 0
+odd = 0
+
+n = int(input("Enter the value of n:-"))
+
+for i in range(1, n+1):
+    if i%2 == 0:
+        even += i
+    else:
+        odd += i 
+
+print(f"sum of even and odd numbers are even:{even} and odd:{odd}")"""
+
+"""finding factors of a number"""
+
+"""
+n = int(input("Please provide the numbers:-"))
+
+for i in range(1,n+1):
+    if n%i == 0:
+        print(i)"""
+
+
+"""Finding perfect number"""
+
+"""
+n = int(input("Enter the number:-"))
+
+sum = 0
+
+for i in range(1,n):
+    if n%i == 0:
+        sum += i
+if sum == n:
+    print(f"{n} is a perfect number")
+else:
+    print(f"{n} is not a perfect number") """
+
+
+"""check prime number"""
+
+# n = int (input("Enter the number:-"))
+
+# count = 0
+
+# for i in range (1,n+1):
+#     if n%i == 0:
+#         count += 1
+
+# if count == 2:
+#     print(f"{n} is a prime number")
+
+# else:
+#     print(f"{n} is not a prime number")
+
