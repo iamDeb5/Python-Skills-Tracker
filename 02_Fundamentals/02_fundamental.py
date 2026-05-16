@@ -199,3 +199,37 @@ else:
 # else:
 #     print(f"{n} is not a prime number")
 
+"""Reverse a string and check pallindrome"""
+
+# #name = "NAMAN" #Its pallindrome
+# name = "AYESHA" #Its not a pallindrome
+
+# reverse_name = ""
+
+# for i in range(len(name)-1,-1,-1):
+#     reverse_name += name[i]
+
+# if name == reverse_name:
+#     print("Its a pallindrome!!")
+
+# else:
+#     print("Its not a pallindrome!!")
+
+
+"""Digits char special char counter"""
+
+a = "fvtyfvyjtfv564536754$#^%#%^#%^@"
+
+dig = 0
+char = 0
+spchar = 0
+
+for i in a:
+    if i.isdigit():
+      dig += 1
+    elif i.isalpha():
+       char += 1
+    else:
+       spchar += 1  
+
+print(f"digits are {dig}, charecters are {char} and special charecters are {spchar}")
