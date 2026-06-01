@@ -69,3 +69,58 @@ The item is sold
 ## Class method: used to refer the class itself @classmethod is used to define a class method
 
 ## Static method: it is not related to the class or instance @staticmethod is used to define a static method
+
+# In inheritence.py
+
+## **Inheritance**:
+
+It allows a child class (sub class) to inherit attributes and methods from a parent class (super class), promoting code reusability.
+
+- **Parent Class / Super Class**: The class whose properties are inherited.
+- **Child Class / Sub Class**: The class that inherits the properties.
+- **Syntax**: `class ChildClass(ParentClass):`
+
+## **Key Concepts Demonstrated**:
+
+1. **Method Overriding**:
+    - The child class `FactoryHowrah` defines its own `hello()` method.
+    - When calling `fh.hello()`, it overrides the parent class's `hello()` method, printing `"Hello from class FactoryHowrah"` instead of `"Hello from class Factory"`.
+
+2. **Constructor and Method Inheritance**:
+    - `FactoryHowrah` does not define its own `__init__` constructor, so it inherits the constructor from `Factory` (it accepts the `brand` parameter).
+    - `FactoryHowrah` inherits the `show_brand()` method from `Factory`. Hence, `fh.show_brand()` successfully prints the brand.
+
+3. **Class Attribute Inheritance**:
+    - The class attribute `a` (`"I am an attribute of class Factory"`) defined in `Factory` is inherited by `FactoryHowrah` and can be accessed via `fh.a`.
+
+## **Code Walkthrough**:
+
+```python
+class Factory: # Parent Class / Super Class
+    a = "I am an attribute of class Factory"
+
+    def __init__(self, brand): # Constructor inherited by child
+        self.brand = brand
+
+    def show_brand(self): # Method inherited by child
+        print(f"The brand is {self.brand}")
+
+    def hello(self):
+        print("Hello from class Factory")
+
+
+class FactoryHowrah(Factory): # Child Class / Sub Class
+    def hello(self): # Overridden method
+        print("Hello from class FactoryHowrah")
+```
+
+## **Output**:
+
+```text
+Hello from class Factory
+Hello from class FactoryHowrah
+The brand is CampusBags
+The brand is SreeLeather
+I am an attribute of class Factory
+I am an attribute of class Factory
+```
